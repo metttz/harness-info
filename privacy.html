@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jak soukromá aplikace Harness zpracovává údaje při přihlášení, práci s asistentem a provozním zálohování.">
+    <title>Zásady ochrany soukromí — Harness</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#obsah">Přejít k obsahu</a>
+    <header class="site-header">
+      <a class="brand" href="index.html">Harness</a>
+      <nav aria-label="Hlavní navigace">
+        <a href="index.html">O aplikaci</a>
+        <a href="privacy.html" aria-current="page">Ochrana soukromí</a>
+      </nav>
+    </header>
+
+    <main id="obsah" class="prose">
+      <div class="intro">
+        <p class="eyebrow">Harness</p>
+        <h1>Zásady ochrany soukromí</h1>
+        <p class="lead">Tyto zásady popisují zpracování údajů při provozu
+          soukromého osobního a týmového asistenta Harness. Aplikace je určena
+          předem schváleným uživatelům.</p>
+      </div>
+
+      <section aria-labelledby="identity">
+        <h2 id="identity">1. Google přihlášení a identita</h2>
+        <p>Při přihlášení aplikace získává od Googlu e-mailovou adresu a základní
+          profilové údaje. Slouží k ověření identity, přiřazení uživatelského
+          účtu a kontrole seznamu uživatelů, kterým správce povolil přístup.</p>
+        <p>Přihlášení využívá oprávnění pro e-mail a základní profil. Připojení
+          Google Disku má samostatný souhlas; samotné přihlášení nevytváří
+          připojení k Disku uživatele.</p>
+      </section>
+
+      <section aria-labelledby="prace">
+        <h2 id="prace">2. Pracovní obsah a provozní údaje</h2>
+        <p>Harness ukládá zadání, konverzace, projekty, poznámky, soubory a
+          výsledky úloh, aby bylo možné pracovat s asistentem a navazovat na
+          předchozí práci. U sdílených projektů je obsah dostupný uživatelům
+          s příslušným oprávněním.</p>
+        <p>Technické záznamy o přístupu, průběhu úloh a chybách slouží ke správě
+          přístupu, bezpečnosti, diagnostice a zajištění provozu aplikace.</p>
+      </section>
+
+      <section aria-labelledby="modely">
+        <h2 id="modely">3. Zpracování poskytovatelem modelu</h2>
+        <p>Při spuštění modelové úlohy se poskytovateli odesílá zadání a kontext
+          potřebný pro její zpracování, například související zprávy nebo obsah
+          souborů, a technické údaje související s využitím služby.</p>
+        <p>Harness používá Codex prostřednictvím samostatného vlastního účtu
+          ChatGPT každého uživatele. Odeslané údaje zpracovává OpenAI podle
+          podmínek a nastavení příslušného účtu a služby.</p>
+      </section>
+
+      <section aria-labelledby="zalohy">
+        <h2 id="zalohy">4. Google Disk a šifrované zálohy</h2>
+        <p>Při povolení zálohovacího připojení Google Disk slouží výhradně jako
+          úložiště vlastních šifrovaných provozních záloh Harnessu. Účelem záloh
+          je obnova aplikace, její konfigurace a pracovních dat po ztrátě nebo
+          poškození.</p>
+        <p>Připojení používá pouze omezené oprávnění <code>drive.file</code> pro
+          soubory vytvořené připojenou aplikací nebo jí výslovně zpřístupněné.
+          Zálohování neskenuje ostatní soubory uživatele na Disku a nepoužívá
+          jejich obsah jako podklad pro asistenta.</p>
+        <p>Obsah záloh se šifruje nástrojem restic před odesláním na Google Disk.
+          Přístupové tokeny a konfigurace zálohování se uchovávají v chráněných
+          neveřejných souborech s přístupem pouze pro systémovou správu.</p>
+      </section>
+
+      <section aria-labelledby="uchovavani">
+        <h2 id="uchovavani">5. Uchovávání údajů a možnosti uživatele</h2>
+        <p>Údaje se uchovávají pro práci s projekty a úlohami, správu přístupu,
+          zajištění provozu a obnovu ze záloh. Odstranění údajů z aplikace a
+          obměna starších šifrovaných záloh jsou samostatné kroky; kopie v
+          zálohách může přetrvat do jejich obměny.</p>
+        <p>Pokud chcete získat informace o vlastních údajích, požádat o jejich
+          opravu či výmaz nebo ukončit přístup do aplikace, obraťte se na
+          správce. Udělený přístup připojené aplikace můžete odvolat také
+          v nastavení svého Google účtu.</p>
+      </section>
+
+      <section aria-labelledby="verejny-web">
+        <h2 id="verejny-web">6. Tato veřejná stránka</h2>
+        <p>Veřejné informační stránky Harnessu nepoužívají JavaScript, cookies,
+          analytické nástroje ani externě načítané obrázky či písma.</p>
+        <p>Hosting veřejných stránek zajišťuje GitHub Pages. GitHub zaznamenává
+          IP adresy návštěvníků pro bezpečnost, i když se návštěvník
+          nepřihlašuje. Zpracování údajů hostitelem popisují
+          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">zásady ochrany soukromí GitHubu</a>.</p>
+      </section>
+
+      <section class="contact" aria-labelledby="kontakt">
+        <h2 id="kontakt">7. Správce a kontakt</h2>
+        <p>Za provoz Harnessu a vyřizování žádostí týkajících se údajů odpovídá
+          správce aplikace. Kontakt pro dotazy a žádosti:</p>
+        <p><a href="mailto:matej.gatek@gmail.com">matej.gatek@gmail.com</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Harness · <a href="index.html">O aplikaci</a></p>
+    </footer>
+  </body>
+</html>
